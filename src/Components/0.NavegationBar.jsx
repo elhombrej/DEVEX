@@ -118,13 +118,13 @@ export function NavegationBar() {
                 href="https://play.google.com/store/apps/details?id=com.altared.dvex.clientes&hl=en&gl=US"
                 style={{ color: "white" }}
               >
-                <DownloadIcon fontSize="large" />
+                <DownloadIcon />
               </a>
             </Box>
 
             <Box sx={{ display: { xs: "inline", sm: "none" } }}>
               <a href="" style={{ color: "white" }}>
-                <AppRegistrationIcon fontSize="large" />
+                <AppRegistrationIcon />
               </a>
             </Box>
           </Box>
