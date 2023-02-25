@@ -11,28 +11,23 @@ import { Details } from "./2.Details";
 import { PaidPlans } from "./3.PaidPlans";
 import Slide from "react-reveal/Slide";
 import Zoom from "react-reveal/Zoom";
+import { MainBackground } from "./01.MainBackground";
 
 export function Home({ mode, setMode }) {
   return (
     <Paper
       sx={{
         minHeight: "100vh",
-        minWidth: "100vw",
-        // overflow: "clip",
       }}
-      xs={12}
     >
-      <Slide top>
-        <NavegationBar />
-      </Slide>
-
+      <NavegationBar />
       <Grid
         container
         direction="column"
         justifyContent="center"
-        alignItems="center"
-        spacing={15}
+        alignItems="stretch"
       >
+        <MainBackground />
         <Grid item>
           <Main />
         </Grid>

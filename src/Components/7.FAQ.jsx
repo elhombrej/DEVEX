@@ -47,12 +47,7 @@ export function FAQ() {
   };
 
   return (
-    <Paper
-    // sx={{
-    //     minWidth: "100vw",
-    //     minHeight: "70vh",
-    //   }}
-    >
+    <Paper sx={{ margin: "5%" }}>
       <Grid
         container
         direction="column"
@@ -60,8 +55,14 @@ export function FAQ() {
         alignItems="center"
         spacing={5}
       >
-        <Grid item>
-          <Typography variant="h2" fontWeight="bold">
+        <Grid
+          item
+          sx={{ display: "flex", justifyContent: "center", marginBottom: 3 }}
+        >
+          <Typography
+            sx={{ typography: { xs: "h5", sm: "h2", md: "h2" } }}
+            fontWeight="bold"
+          >
             ¿Tienes preguntas sobre DEVEX?
           </Typography>
         </Grid>
@@ -72,12 +73,12 @@ export function FAQ() {
               bgcolor: "background.paper",
               display: "flex",
               height: 400,
-              width: 800,
+              width: { xs: "100%", sm: "100%" },
             }}
           >
             <Tabs
               orientation="vertical"
-              // variant="scrollable"
+              variant="scrollable"
               value={value}
               onChange={handleChange}
               aria-label="Vertical tabs example"
@@ -106,7 +107,7 @@ export function FAQ() {
                 bgcolor: "background.paper",
                 display: "flex",
                 height: 400,
-                width: 500,
+                width: { xs: "100%", sm: "100%" },
               }}
             >
               <TabPanel value={value} index={0}>

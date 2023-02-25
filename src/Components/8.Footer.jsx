@@ -14,15 +14,22 @@ export function Footer() {
     //     minHeight: "70vh",
     //   }}
     >
-      <Typography 
-      sx={{ display: 'flex', justifyContent: 'center' , marginBottom:3 }}
+      <Typography
+        sx={{ display: "flex", justifyContent: "center", marginBottom: 3 }}
       >
         2023 DEVEX Argentina
       </Typography>
-      <Typography 
-      sx={{ display: 'flex', justifyContent: 'center' , marginBottom:3 }}
+      <Typography
+        sx={{ display: "flex", justifyContent: "center", marginBottom: 3 }}
       >
         Contacto de ventas: Juan Mattesich
+      </Typography>
+
+      <Typography
+        sx={{ display: "flex", justifyContent: "center", marginBottom: 3 }}
+      >
+        Contacto de desarrollo web:
+      <a href='https://portfolio-elhombrej.vercel.app'>Joaquin Padron</a>
       </Typography>
 
       <Grid
@@ -33,7 +40,6 @@ export function Footer() {
         spacing={5}
         paddingBottom={5}
       >
-        
         <Grid item>
           <a
             href="https://www.instagram.com/juan.dvex/"
@@ -73,7 +79,6 @@ export function Footer() {
           </a>
         </Grid>
       </Grid>
-
     </Paper>
   );
 }

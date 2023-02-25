@@ -13,6 +13,8 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
+import AppRegistrationIcon from "@mui/icons-material/AppRegistration";
+import DownloadIcon from "@mui/icons-material/Download";
 
 const pages = ["Products", "Pricing", "Blog"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -42,7 +44,7 @@ export function NavegationBar() {
         <Toolbar disableGutters>
           <Box sx={{ display: { xs: "none", sm: "none", md: "block" } }}>
             <img
-              src="./src/Images/devex-title.jpg"
+              src="../Images/devex-title.jpg"
               alt="DEVEX"
               width="330px"
               height="100px"
@@ -51,7 +53,7 @@ export function NavegationBar() {
           </Box>
           <Box sx={{ display: { sm: "block", md: "none" } }}>
             <img
-              src="./src/Images/devex-logo.jpg"
+              src="../Images/devex-logo.jpg"
               alt="DEVEX"
               width="100px"
               style={{ borderRadius: "5px" }}
@@ -85,12 +87,16 @@ export function NavegationBar() {
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}></Box>
 
-          <Box sx={{ flexGrow: 0 }}>
+          <Box sx={{ flexGrow: 0  }}>
             {" "}
             <Button
               size="large"
               color="secondary"
-              sx={{ borderRadius: "10px" , paddingRight:5}}
+              sx={{
+                borderRadius: "10px",
+                paddingRight: 5,
+                display: { xs: "none", sm: "inline" },
+              }}
               href="https://play.google.com/store/apps/details?id=com.altared.dvex.clientes&hl=en&gl=US"
             >
               Descarga la app
@@ -99,10 +105,28 @@ export function NavegationBar() {
               size="large"
               variant="outlined"
               color="secondary"
-              sx={{ borderRadius: "10px" }}
+              sx={{
+                borderRadius: "10px",
+                display: { xs: "none", sm: "inline" },
+              }}
             >
               Crear cuenta
             </Button>
+
+            <Box sx={{ display: { xs: "inline", sm: "none" }, marginRight:'20px' }}>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.altared.dvex.clientes&hl=en&gl=US"
+                style={{ color: "white" }}
+              >
+                <DownloadIcon fontSize="large" />
+              </a>
+            </Box>
+
+            <Box sx={{ display: { xs: "inline", sm: "none" } }}>
+              <a href="" style={{ color: "white" }}>
+                <AppRegistrationIcon fontSize="large" />
+              </a>
+            </Box>
           </Box>
         </Toolbar>
       </Container>
