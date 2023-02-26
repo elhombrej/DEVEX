@@ -12,7 +12,7 @@ export function Main() {
     <Zoom>
       <Box
         sx={{
-          minHeight: { xs: "50vh", sm: "50vh", md: "70vh" },
+          minHeight: " 50vh",
           position: "relative",
           // backgroundImage: `url(${mainPhoto})`,
         }}
@@ -37,18 +37,26 @@ export function Main() {
           <Grid
             item
             sx={{
-              // padding: { xs: 0, sm: 0, md: 5 },
-              // paddingTop: { xs: 20, sm: 20 },
+              marginBottom: "5%",
+              marginRight: "5%",
+              marginLeft: "5%",
             }}
           >
             <Typography
               fontWeight="bold"
-              margin="5%"
               sx={{
                 display: "flex",
-                typography: { xs: "h5", sm: "h4", md: "h3", lg: "h2" },
+                typography: {
+                  xs: "h6",
+                  sm: "h5",
+                  md: "h5",
+                  lg: "h4",
+                  xl: "h3",
+                },
                 backgroundColor: "#37474a93",
-                borderRadius: "20px",
+                borderRadius: "10px",
+                justifyContent: "center",
+                padding: 0.5,
               }}
             >
               Series, peliculas, Tv y radio en un solo lugar.
@@ -59,10 +67,13 @@ export function Main() {
               // margin="5%"
               sx={{
                 display: "flex",
-                typography: { xs: "body", sm: "h6" },
+                typography: { xs: "body", sm: "body", md: "body", lg: "h6" },
                 backgroundColor: "#37474a93",
                 borderRadius: "10px",
+                justifyContent: "center",
+                padding: 0.5,
               }}
+              marginBottom="5%"
             >
               ¡Haz hoy tu prueba gratis y disfruta todo el entretenimiento!
             </Typography>
