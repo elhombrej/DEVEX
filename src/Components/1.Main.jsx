@@ -6,8 +6,7 @@ import { makeStyles } from "@mui/styles";
 import { style } from "@mui/system";
 
 export function Main() {
-
-    const classes = useStyles();
+  const classes = useStyles();
 
   return (
     <Zoom>
@@ -34,7 +33,7 @@ export function Main() {
           >
             <Typography
               fontWeight="bold"
-              margin= "5%"
+              margin="5%"
               sx={{
                 display: "flex",
                 typography: { xs: "h3", sm: "h2", md: "h2", lg: "h1" },
@@ -47,7 +46,7 @@ export function Main() {
           </Grid>
           <Grid item>
             <Typography
-                margin= "5%"
+              margin="5%"
               sx={{
                 display: "flex",
                 typography: { xs: "body", sm: "h6" },
@@ -78,6 +77,5 @@ const useStyles = makeStyles(() => ({
 
   bgImage: {
     backgroundImage: `url(${mainPhoto})`,
-margin:'auto'  
   },
 }));

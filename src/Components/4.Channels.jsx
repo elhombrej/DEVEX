@@ -1,5 +1,5 @@
 //Tv argentina , Deportes, canales infantiles , HBO premium , canales de cine  , Television internacional , Radios , Netflix , Anime ,
-import { Grid, Paper, Typography } from "@mui/material";
+import { Grid, Box, Typography } from "@mui/material";
 import React from "react";
 // import imageBackground from "./Images/devex-logo.jpg";
 import Slide from "react-reveal/Slide";
@@ -7,7 +7,7 @@ import Slide from "react-reveal/Slide";
 export function Channels() {
   return (
     <Slide bottom>
-      <Paper sx={{ margin: "5%" }}>
+      <Box sx={{ margin: "5%" }}>
         <Grid
           container
           direction="row"
@@ -30,7 +30,7 @@ export function Channels() {
             </Typography>
           </Grid>
         </Grid>
-      </Paper>
+      </Box>
     </Slide>
   );
 }

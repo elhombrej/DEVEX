@@ -1,4 +1,4 @@
-import { Button, Grid, Paper, Typography } from "@mui/material";
+import { Button, Grid, Box, Typography , Paper} from "@mui/material";
 import React from "react";
 import DownloadIcon from "@mui/icons-material/Download";
 import Slide from "react-reveal/Slide";
@@ -6,18 +6,21 @@ import Slide from "react-reveal/Slide";
 export function Details() {
   return (
     <Slide bottom>
-      <Paper 
-      sx={{ margin: "5%" }}
-      >
+      <Paper sx={{ margin: "5%" }} variant="outlined" >
         <Grid
           container
           direction="row"
           justifyContent="space-evenly"
           alignItems="center"
+          padding={3}
         >
           <Grid item xs={12} sm={4}>
-            <Typography sx={{
-                typography: { xs: "h3", sm: "h4", md: "h3" },}} fontWeight="bold">
+            <Typography
+              sx={{
+                typography: { xs: "h3", sm: "h4", md: "h3" },
+              }}
+              fontWeight="bold"
+            >
               Descarga la app desde la tienda de Google.
             </Typography>
             <Button
@@ -32,7 +35,7 @@ export function Details() {
               startIcon={<DownloadIcon />}
               href="https://play.google.com/store/apps/details?id=com.altared.dvex.clientes&hl=en&gl=US"
             >
-              <Typography fontWeight="bold"> Descargar DEVEX </Typography>
+              <Typography fontWeight="bold"> Descargar </Typography>
             </Button>
           </Grid>
           <Grid
@@ -62,7 +65,7 @@ export function Details() {
               startIcon={<DownloadIcon />}
               href="https://play.google.com/store/apps/details?id=com.altared.dvex.clientes&hl=en&gl=US"
             >
-              <Typography fontWeight="bold"> Descargar DEVEX </Typography>
+              <Typography fontWeight="bold"> Descargar </Typography>
             </Button>
           </Grid>
         </Grid>

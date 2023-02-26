@@ -39,12 +39,12 @@ export function NavegationBar() {
   };
 
   return (
-    <AppBar position="sticky">
+    <AppBar color='primary' position="sticky">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ display: { xs: "none", sm: "none", md: "block" } }}>
             <img
-              src="../Images/devex-title.jpg"
+              src="../Images/devex-title.png"
               alt="DEVEX"
               width="330px"
               height="100px"
@@ -53,7 +53,7 @@ export function NavegationBar() {
           </Box>
           <Box sx={{ display: { sm: "block", md: "none" } }}>
             <img
-              src="../Images/devex-logo.jpg"
+              src="../Images/devex-logo.png"
               alt="DEVEX"
               width="100px"
               style={{ borderRadius: "5px" }}

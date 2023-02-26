@@ -1,9 +1,9 @@
-import { Button, Card, Paper, Grid, Typography } from "@mui/material";
+import { Button, Card, Box, Grid, Typography } from "@mui/material";
 import React from "react";
 
 export function PaidPlans() {
   return (
-    <Paper sx={{ margin: "5%" }}>
+    <Box sx={{ margin: "5%" }}>
       <Grid
         container
         direction="row"
@@ -300,6 +300,6 @@ export function PaidPlans() {
           </Card>
         </Grid>
       </Grid>
-    </Paper>
+    </Box>
   );
 }

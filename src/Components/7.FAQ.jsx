@@ -1,4 +1,4 @@
-import { Grid, Paper } from "@mui/material";
+import { Grid } from "@mui/material";
 import * as React from "react";
 import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
@@ -47,7 +47,7 @@ export function FAQ() {
   };
 
   return (
-    <Paper sx={{ margin: "5%" }}>
+    <Box sx={{ margin: "5%" }}>
       <Grid
         container
         direction="column"
@@ -135,6 +135,6 @@ export function FAQ() {
           </Box>
         </Grid>
       </Grid>
-    </Paper>
+    </Box>
   );
 }

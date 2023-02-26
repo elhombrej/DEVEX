@@ -1,4 +1,4 @@
-import { Grid, Paper, Typography } from "@mui/material";
+import { Box, Grid, Paper, Typography } from "@mui/material";
 import React from "react";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
@@ -8,7 +8,7 @@ import ShopIcon from "@mui/icons-material/Shop";
 
 export function Footer() {
   return (
-    <Paper
+    <Box
     // sx={{
     //     minWidth: "100vw",
     //     minHeight: "70vh",
@@ -22,14 +22,14 @@ export function Footer() {
       <Typography
         sx={{ display: "flex", justifyContent: "center", marginBottom: 3 }}
       >
-        Contacto de ventas: Juan Mattesich
+        Contacto de desarrollo web:
+        <a href="https://portfolio-elhombrej.vercel.app">Joaquin Padron</a>
       </Typography>
 
       <Typography
         sx={{ display: "flex", justifyContent: "center", marginBottom: 3 }}
       >
-        Contacto de desarrollo web:
-      <a href='https://portfolio-elhombrej.vercel.app'>Joaquin Padron</a>
+        Contacto de ventas: Juan Mattesich
       </Typography>
 
       <Grid
@@ -79,6 +79,6 @@ export function Footer() {
           </a>
         </Grid>
       </Grid>
-    </Paper>
+    </Box>
   );
 }
