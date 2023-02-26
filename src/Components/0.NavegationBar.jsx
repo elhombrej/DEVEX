@@ -39,10 +39,10 @@ export function NavegationBar() {
   };
 
   return (
-    <AppBar color='primary' position="sticky">
+    <AppBar color="primary" position="sticky">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Box sx={{ display: { xs: "none", sm: "none", md: "block" } }}>
+          {/* <Box sx={{ display: { xs: "none", sm: "none", md: "block" } }}>
             <img
               src="../Images/devex-title.png"
               alt="DEVEX"
@@ -50,8 +50,103 @@ export function NavegationBar() {
               height="100px"
               style={{ borderRadius: "15px" }}
             />
+          </Box> */}
+
+          <Box
+            variant="h6"
+            noWrap
+            component="a"
+            href="/"
+            sx={{
+              mr: 2,
+              display: { xs: "none", md: "flex" },
+              fontFamily: "monospace",
+              fontWeight: 700,
+              letterSpacing: ".3rem",
+              color: "inherit",
+              textDecoration: "none",
+            }}
+          >
+            <img
+              src="../Images/devex-logo.png"
+              alt="DEVEX"
+              width="100px"
+              style={{ borderRadius: "5px" }}
+            />
           </Box>
-          <Box sx={{ display: { sm: "block", md: "none" } }}>
+
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}></Box>
+          <Box sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+          <Box
+            variant="h5"
+            noWrap
+            component="a"
+            href=""
+            sx={{
+              mr: 1,
+              display: { xs: "flex", md: "none" },
+              flexGrow: 1,
+              fontFamily: "monospace",
+              fontWeight: 700,
+              letterSpacing: ".3rem",
+              color: "inherit",
+              textDecoration: "none",
+            }}
+          >
+            <img
+              src="../Images/devex-logo.png"
+              alt="DEVEX"
+              width="100px"
+              style={{ borderRadius: "5px" }}
+            />
+          </Box>
+          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}></Box>
+
+          <Box sx={{ flexGrow: 0 }}>
+            {" "}
+            <Button
+              size="large"
+              color="secondary"
+              sx={{
+                borderRadius: "10px",
+                paddingRight: 5,
+                display: { xs: "none", sm: "inline" },
+              }}
+              href="https://play.google.com/store/apps/details?id=com.altared.dvex.clientes&hl=en&gl=US"
+            >
+              Descarga la app
+            </Button>
+            <Button
+              size="large"
+              variant="outlined"
+              color="secondary"
+              sx={{
+                borderRadius: "10px",
+                display: { xs: "none", sm: "inline" },
+              }}
+            >
+              Crear cuenta
+            </Button>
+            <Box
+              sx={{
+                display: { xs: "inline", sm: "none" },
+                marginRight: "20px",
+              }}
+            >
+              <a
+                href="https://play.google.com/store/apps/details?id=com.altared.dvex.clientes&hl=en&gl=US"
+                style={{ color: "white" }}
+              >
+                <DownloadIcon fontSize="large" />
+              </a>
+            </Box>
+            <Box sx={{ display: { xs: "inline", sm: "none" } }}>
+              <a href="" style={{ color: "white" }}>
+                <AppRegistrationIcon fontSize="large" />
+              </a>
+            </Box>
+          </Box>
+          {/* <Box>
             <img
               src="../Images/devex-logo.png"
               alt="DEVEX"
@@ -87,7 +182,7 @@ export function NavegationBar() {
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}></Box>
 
-          <Box sx={{ flexGrow: 0  }}>
+          <Box sx={{ flexGrow: 0 }}>
             {" "}
             <Button
               size="large"
@@ -112,8 +207,12 @@ export function NavegationBar() {
             >
               Crear cuenta
             </Button>
-
-            <Box sx={{ display: { xs: "inline", sm: "none" }, marginRight:'20px' }}>
+            <Box
+              sx={{
+                display: { xs: "inline", sm: "none" },
+                marginRight: "20px",
+              }}
+            >
               <a
                 href="https://play.google.com/store/apps/details?id=com.altared.dvex.clientes&hl=en&gl=US"
                 style={{ color: "white" }}
@@ -121,13 +220,12 @@ export function NavegationBar() {
                 <DownloadIcon fontSize="large" />
               </a>
             </Box>
-
             <Box sx={{ display: { xs: "inline", sm: "none" } }}>
               <a href="" style={{ color: "white" }}>
                 <AppRegistrationIcon fontSize="large" />
               </a>
             </Box>
-          </Box>
+          </Box> */}
         </Toolbar>
       </Container>
     </AppBar>

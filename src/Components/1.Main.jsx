@@ -12,7 +12,7 @@ export function Main() {
     <Zoom>
       <Box
         sx={{
-          minHeight: "70vh",
+          minHeight: { xs: "50vh", sm: "50vh", md: "70vh" },
           position: "relative",
           // backgroundImage: `url(${mainPhoto})`,
         }}
@@ -20,15 +20,25 @@ export function Main() {
       >
         <Grid
           container
-          direction="row"
+          direction="column"
           justifyContent="center"
           alignItems="center"
         >
           <Grid
             item
+            paddingTop={10}
             sx={{
-              padding: { xs: 0, sm: 0, md: 20 },
-              paddingTop: { xs: 20, sm: 20 },
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            <img src="./Images/devex-title.png" alt="DEVEX" width="70%" />
+          </Grid>
+          <Grid
+            item
+            sx={{
+              // padding: { xs: 0, sm: 0, md: 5 },
+              // paddingTop: { xs: 20, sm: 20 },
             }}
           >
             <Typography
@@ -36,7 +46,7 @@ export function Main() {
               margin="5%"
               sx={{
                 display: "flex",
-                typography: { xs: "h3", sm: "h2", md: "h2", lg: "h1" },
+                typography: { xs: "h5", sm: "h4", md: "h3", lg: "h2" },
                 backgroundColor: "#37474a93",
                 borderRadius: "20px",
               }}
@@ -46,14 +56,13 @@ export function Main() {
           </Grid>
           <Grid item>
             <Typography
-              margin="5%"
+              // margin="5%"
               sx={{
                 display: "flex",
                 typography: { xs: "body", sm: "h6" },
                 backgroundColor: "#37474a93",
                 borderRadius: "10px",
               }}
-              fontWeight="bold"
             >
               ¡Haz hoy tu prueba gratis y disfruta todo el entretenimiento!
             </Typography>
