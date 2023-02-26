@@ -47,7 +47,13 @@ export function FAQ() {
   };
 
   return (
-    <Box sx={{ marginRight: {sm:'5%', md:0}, marginLeft:{sm:'5%', md:0} , marginTop:'5%' }}>
+    <Box
+      sx={{
+        marginRight: { xs: 0, sm: "5%", md: 0 },
+        marginLeft: { xs: 0, sm: "5%", md: 0 },
+        marginTop: "5%",
+      }}
+    >
       <Grid
         container
         direction="column"
@@ -111,43 +117,55 @@ export function FAQ() {
               }}
             >
               <TabPanel value={value} index={0}>
-                Devex es una plataforma de straming donde puede disfrutar de
-                multiples servicios de Tv, series, peliculas y radio sin
-                necesidad de pagar demas.
+                <Typography fontSize={{ xs: "12px", sm: "20px" }}>
+                  Devex es una plataforma de straming donde puede disfrutar de
+                  multiples servicios de Tv, series, peliculas y radio sin
+                  necesidad de pagar demas.
+                </Typography>
               </TabPanel>
               <TabPanel value={value} index={1}>
-                ¡Si! DEVEX tiene su prueba gratuita para que pruebes todos los
-                servicios disponibles sin ingresar ningun tipo de informacion
-                previa, solicita una cuenta de prueba contactandose con el
-                sector de ventas, la cuenta dura un corto periodo de tiempo y si
-                esta satisfecho con el servicio puede elegir un plan
-                contactandose.
+                <Typography fontSize={{ xs: "12px", sm: "20px" }}>
+                  ¡Si! DEVEX tiene su prueba gratuita para que pruebes todos los
+                  servicios disponibles sin ingresar ningun tipo de informacion
+                  previa, solicita una cuenta de prueba contactandose con el
+                  sector de ventas, la cuenta dura un corto periodo de tiempo y
+                  si esta satisfecho con el servicio puede elegir un plan
+                  contactandose.
+                </Typography>
               </TabPanel>
 
               <TabPanel value={value} index={2}>
-                DEVEX esta disponible en dipositivos compatibles con el sistema
-                Android, sean televisores inteligentes, celulares, tablets, o
-                dispositivos multimedia.
+                <Typography fontSize={{ xs: "12px", sm: "20px" }}>
+                  DEVEX esta disponible en dipositivos compatibles con el
+                  sistema Android, sean televisores inteligentes, celulares,
+                  tablets, o dispositivos multimedia.
+                </Typography>
               </TabPanel>
               <TabPanel value={value} index={3}>
-                La subscripcion de DEVEX es prepaga, por lo que al acabarse el
-                plazo de su pago ya no tendra acceso a la plataforma y nada se
-                le cobrara, solicitar nuevamente el servicio no cuesta ningun
-                cargo adicional, solamente el pago del plan a elegir.
+                <Typography fontSize={{ xs: "12px", sm: "20px" }}>
+                  La subscripcion de DEVEX es prepaga, por lo que al acabarse el
+                  plazo de su pago ya no tendra acceso a la plataforma y nada se
+                  le cobrara, solicitar nuevamente el servicio no cuesta ningun
+                  cargo adicional, solamente el pago del plan a elegir.
+                </Typography>
               </TabPanel>
               <TabPanel value={value} index={4}>
-                DEVEX cuenta con una extensa lista de canales de television por
-                cable, series y peliculas de distintos servicios de streaming y
-                radio de distintos paises unidos en una sola plataforma.
+                <Typography fontSize={{ xs: "12px", sm: "20px" }}>
+                  DEVEX cuenta con una extensa lista de canales de television
+                  por cable, series y peliculas de distintos servicios de
+                  streaming y radio de distintos paises unidos en una sola
+                  plataforma.
+                </Typography>
               </TabPanel>
               <TabPanel value={value} index={5}>
-                DEVEX esta completo de canales, series y peliculas para niños de
-                todas las edades e incluso canales sobre una sola serie para
-                disfrutar en cualquier momento.
+                <Typography fontSize={{ xs: "12px", sm: "20px" }}>
+                  DEVEX esta completo de canales, series y peliculas para niños
+                  de todas las edades e incluso canales sobre una sola serie
+                  para disfrutar en cualquier momento.
+                </Typography>
               </TabPanel>
               <TabPanel value={value} index={6}>
-                <Typography
-                variant="h6">
+                <Typography fontSize={{ xs: "12px", sm: "20px" }}>
                   Para renovar su subscripcion a DEVEX y poder disprutar de todo
                   el contenido primero debe haber elegido un plan de pago, al
                   finalizar su periodo debe contactarse por cualquiera de los
