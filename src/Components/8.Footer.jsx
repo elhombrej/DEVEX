@@ -9,10 +9,10 @@ import ShopIcon from "@mui/icons-material/Shop";
 export function Footer() {
   return (
     <Box
-    // sx={{
-    //     minWidth: "100vw",
-    //     minHeight: "70vh",
-    //   }}
+      sx={{
+        // marginRight: "5%",
+        // marginLeft: "5%",
+      }}
     >
       <Typography
         sx={{ display: "flex", justifyContent: "center", marginBottom: 3 }}
@@ -22,8 +22,12 @@ export function Footer() {
       <Typography
         sx={{ display: "flex", justifyContent: "center", marginBottom: 3 }}
       >
-        Contacto de desarrollo web:
-        <a href="https://portfolio-elhombrej.vercel.app">Joaquin Padron</a>
+        <a
+          href="https://portfolio-elhombrej.vercel.app"
+          style={{ color: "white" }}
+        >
+          Desarrollo web: Joaquin Padron
+        </a>
       </Typography>
 
       <Typography
@@ -50,7 +54,7 @@ export function Footer() {
         </Grid>
         <Grid item>
           <a
-            href="https://api.whatsapp.com/send/?phone=543388433694&text=Hola+Juan%2C+te+quer%C3%ADa+consultar+sobre+DVEX&type=phone_number&app_absent=0"
+            href="https://api.whatsapp.com/send/?phone=543388433694&text=Hola+Juan%2C+te+quer%C3%ADa+consultar+sobre+DEVEX&type=phone_number&app_absent=0"
             style={{ color: "white" }}
           >
             <WhatsAppIcon fontSize="large" />

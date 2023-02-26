@@ -9,78 +9,82 @@ export function Main() {
   const classes = useStyles();
 
   return (
-    <Zoom>
-      <Box
-        sx={{
-          minHeight: " 50vh",
-          position: "relative",
-          // backgroundImage: `url(${mainPhoto})`,
-        }}
-        className={classes.bgImage}
+    // <Zoom>
+    <Box
+      sx={{
+        minHeight: " 50vh",
+        position: "relative",
+        // backgroundImage: `url(${mainPhoto})`,
+      }}
+      className={classes.bgImage}
+    >
+      <Grid
+        container
+        direction="column"
+        justifyContent="center"
+        alignItems="center"
       >
         <Grid
-          container
-          direction="column"
-          justifyContent="center"
-          alignItems="center"
+          item
+          paddingTop={10}
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+          }}
         >
-          <Grid
-            item
-            paddingTop={10}
+          <img
+            src="./Images/devex-title.png"
+            alt="DEVEX"
+            width="90%"
+          />
+        </Grid>
+        <Grid
+          item
+          sx={{
+            marginBottom: "5%",
+            marginRight: "5%",
+            marginLeft: "5%",
+          }}
+        >
+          <Typography
+            fontWeight="bold"
             sx={{
               display: "flex",
+              typography: {
+                xs: "body",
+                sm: "h5",
+                md: "h5",
+                lg: "h4",
+                xl: "h3",
+              },
+              backgroundColor: "#37474a93",
+              borderRadius: "10px",
               justifyContent: "center",
+              padding: 0.5,
             }}
           >
-            <img src="./Images/devex-title.png" alt="DEVEX" width="70%" />
-          </Grid>
-          <Grid
-            item
-            sx={{
-              marginBottom: "5%",
-              marginRight: "5%",
-              marginLeft: "5%",
-            }}
-          >
-            <Typography
-              fontWeight="bold"
-              sx={{
-                display: "flex",
-                typography: {
-                  xs: "h6",
-                  sm: "h5",
-                  md: "h5",
-                  lg: "h4",
-                  xl: "h3",
-                },
-                backgroundColor: "#37474a93",
-                borderRadius: "10px",
-                justifyContent: "center",
-                padding: 0.5,
-              }}
-            >
-              Series, peliculas, Tv y radio en un solo lugar.
-            </Typography>
-          </Grid>
-          <Grid item>
-            <Typography
-              // margin="5%"
-              sx={{
-                display: "flex",
-                typography: { xs: "body", sm: "body", md: "body", lg: "h6" },
-                backgroundColor: "#37474a93",
-                borderRadius: "10px",
-                justifyContent: "center",
-                padding: 0.5,
-              }}
-              marginBottom="5%"
-            >
-              ¡Haz hoy tu prueba gratis y disfruta todo el entretenimiento!
-            </Typography>
-          </Grid>
+            Series, peliculas, Tv y radio en un solo lugar.
+          </Typography>
         </Grid>
-      </Box>
-    </Zoom>
+        <Grid item>
+          <Typography
+            // margin="5%"
+            sx={{
+              display: "flex",
+              fontSize: { xs: "10px", sm: "15px", md: "15px", lg: "20px" },
+              backgroundColor: "#37474a93",
+              borderRadius: "10px",
+              justifyContent: "center",
+              padding: 0.5,
+            }}
+            marginBottom="1%"
+          >
+            ¡Haz hoy tu prueba gratis y disfruta todo el entretenimiento!
+          </Typography>
+        </Grid>
+      </Grid>
+    </Box>
+    // </Zoom>
   );
 }
 
@@ -97,5 +101,8 @@ const useStyles = makeStyles(() => ({
 
   bgImage: {
     backgroundImage: `url(${mainPhoto})`,
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
   },
 }));

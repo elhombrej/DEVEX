@@ -120,12 +120,13 @@ export function NavegationBar() {
               size="large"
               variant="outlined"
               color="secondary"
+              href="https://api.whatsapp.com/send/?phone=543388433694&text=Hola+Juan%2C+me+gustaria+solicitar+una+cuenta+de+DEVEX&type=phone_number&app_absent=0"
               sx={{
                 borderRadius: "10px",
                 display: { xs: "none", sm: "inline" },
               }}
             >
-              Crear cuenta
+              Solicita una cuenta
             </Button>
             <Box
               sx={{

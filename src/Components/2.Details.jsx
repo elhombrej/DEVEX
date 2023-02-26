@@ -1,4 +1,4 @@
-import { Button, Grid, Box, Typography , Paper} from "@mui/material";
+import { Button, Grid, Box, Typography, Paper } from "@mui/material";
 import React from "react";
 import DownloadIcon from "@mui/icons-material/Download";
 import Slide from "react-reveal/Slide";
@@ -6,7 +6,7 @@ import Slide from "react-reveal/Slide";
 export function Details() {
   return (
     <Slide bottom>
-      <Paper sx={{ margin: "5%" }} variant="outlined" >
+      <Paper sx={{ marginRight: "5%", marginLeft: "5%" }} variant="outlined">
         <Grid
           container
           direction="row"
@@ -17,11 +17,11 @@ export function Details() {
           <Grid item xs={12} sm={4}>
             <Typography
               sx={{
-                typography: { xs: "h3", sm: "h4", md: "h3" },
+                typography: { xs: "h5", sm: "h4", md: "h3" },
               }}
               fontWeight="bold"
             >
-              Descarga la app desde la tienda de Google.
+              Disponible en Google Play.
             </Typography>
             <Button
               size="large"
@@ -42,7 +42,12 @@ export function Details() {
             item
             xs={12}
             sm={4}
-            sx={{ display: "flex", justifyContent: "center", marginBottom: 3 }}
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              marginBottom: 3,
+              marginTop: 3,
+            }}
           >
             <img
               src="../Images/google-play.png"

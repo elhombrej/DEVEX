@@ -20,16 +20,21 @@ export function Home({ mode, setMode }) {
         minHeight: "100vh",
       }}
     >
-      <NavegationBar />
+      <Slide top>
+        <NavegationBar />
+      </Slide>
       <Grid
         container
         direction="column"
         justifyContent="center"
-        alignItems="stretch"
+        alignItems="center"
+        spacing={5}
       >
         <MainBackground />
         <Grid item>
-          <Main />
+          <Slide top>
+            <Main />
+          </Slide>
         </Grid>
         <Grid item>
           <Details />
