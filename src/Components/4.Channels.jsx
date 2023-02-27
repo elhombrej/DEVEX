@@ -7,7 +7,6 @@ import Slide from "react-reveal/Slide";
 export function Channels() {
   return (
     <Box sx={{ marginRight: "5%", marginLeft: "5%" }}>
-        <Slide bottom>
         <Grid
           container
           direction="row"
@@ -30,7 +29,6 @@ export function Channels() {
             </Typography>
           </Grid>
         </Grid>
-    </Slide>
       </Box>
   );
 }
