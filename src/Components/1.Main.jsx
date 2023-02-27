@@ -14,7 +14,6 @@ export function Main() {
       sx={{
         minHeight: " 50vh",
         position: "relative",
-        // backgroundImage: `url(${mainPhoto})`,
       }}
       className={classes.bgImage}
     >
@@ -23,8 +22,7 @@ export function Main() {
         direction="column"
         justifyContent="center"
         alignItems="center"
-        sx={{            backgroundColor: "#37474a93"
-      }}
+        sx={{ backgroundColor: "#37474a93", minHeight: " 50vh" }}
       >
         <Grid
           item
@@ -34,11 +32,7 @@ export function Main() {
             justifyContent: "center",
           }}
         >
-          <img
-            src="./Images/devex-title.png"
-            alt="DEVEX"
-            width="90%"
-          />
+          <img src="./Images/devex-title.png" alt="DEVEX" width="90%" />
         </Grid>
         <Grid
           item
