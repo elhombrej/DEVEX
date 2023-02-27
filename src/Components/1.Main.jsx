@@ -23,6 +23,8 @@ export function Main() {
         direction="column"
         justifyContent="center"
         alignItems="center"
+        sx={{            backgroundColor: "#37474a93"
+      }}
       >
         <Grid
           item
@@ -57,7 +59,7 @@ export function Main() {
                 lg: "h4",
                 xl: "h3",
               },
-              backgroundColor: "#37474a93",
+              // backgroundColor: "#37474a93",
               borderRadius: "10px",
               justifyContent: "center",
               padding: 0.5,
@@ -72,7 +74,7 @@ export function Main() {
             sx={{
               display: "flex",
               fontSize: { xs: "10px", sm: "15px", md: "15px", lg: "20px" },
-              backgroundColor: "#37474a93",
+              // backgroundColor: "#37474a93",
               borderRadius: "10px",
               justifyContent: "center",
               padding: 0.5,

@@ -88,7 +88,7 @@ export function PaidPlans() {
                         }}
                       >
                         {" "}
-                        Hasta 4 usuarios{" "}
+                        Hasta 4 usuarios.{" "}
                       </Typography>
                     </li>
                   </ul>
