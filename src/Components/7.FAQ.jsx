@@ -66,7 +66,7 @@ export function FAQ() {
           // sx={{ display: "flex", justifyContent: "center" }}
         >
           <Typography
-            sx={{ typography: { xs: "h5", sm: "h2", md: "h2" } }}
+            sx={{ typography: { xs: "h5", sm: "h4", md: "h3" , lg:'h2' } }}
             fontWeight="bold"
           >
             ¿Tienes preguntas sobre DEVEX?
