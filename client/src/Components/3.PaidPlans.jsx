@@ -24,9 +24,9 @@ export function PaidPlans() {
       Body: `${formState.name} pago correctamente el servicio de plan mensual. Su mail a registrar es: ${formState.email}`,
     };
     try {
-      console.log(config)
+      console.log(config);
       if (window.Email) {
-        window.Email.send(config).then(() => alert('Sucess'));
+        window.Email.send(config).then(() => alert("Sucess"));
       }
     } catch (error) {
       console.log(error);
@@ -68,12 +68,9 @@ export function PaidPlans() {
     }
   }, [preferenceId, isComponentLoaded]);
 
-  const mercadopago = new MercadoPago(
-    "TEST-3ee89de9-d50f-41a6-ad97-7af5aeedb414",
-    {
-      locale: "es-AR", // The most common are: 'pt-BR', 'es-AR' and 'en-US'
-    }
-  );
+  const mercadopago = new MercadoPago(`${import.meta.env.VITE_MERCADOPAGO}`, {
+    locale: "es-AR", // The most common are: 'pt-BR', 'es-AR' and 'en-US'
+  });
 
   function createCheckoutButton(preferenceIdLocal) {
     // Initialize the checkout
@@ -253,7 +250,13 @@ export function PaidPlans() {
                           onChange={changeHandler}
                           className="border border-blue-900"
                         />
-                        <Button variant='contained' type="submit" value="Send mail">Go!</Button>
+                        <Button
+                          variant="contained"
+                          type="submit"
+                          value="Send mail"
+                        >
+                          Go!
+                        </Button>
                       </form>
 
                       <Button
